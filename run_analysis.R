@@ -25,8 +25,9 @@
       rm(list = c("x","y","subject"))
     }
     levels(Y$Activity)<- Activity
-    rm(list = c("FF","Activity","X","Y"))
+    
     Dati<- cbind(Y,X)
+    rm(list = c("FF","Activity","X","Y"))
 
 ## Extract mean and standard deviation for each measurement (Step 2,5)    
     Search.String <- function(Data.string,String= stop("need a string character")) {
